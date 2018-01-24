@@ -505,57 +505,61 @@ h1{
 }
 
 
-
-@media (min-width: 550px){
-#contents {
-    padding-top: 35px;
-}
-
-
-
-}
-
-
 #contents {
   
-  padding-top: 20px;
-  
-  #main {
-    
-    padding-right: 3px;
-    
+    padding-top: 20px;
+    #main{
+      .company_title {
+        margin-bottom: 0px;
+      }
     h2 {
-    font-size: 1.5rem;
-    padding-bottom: 15px;
     color: #42b9d0;
     border-bottom: 3px solid #42b9d0;
+    font-size: 15px;
+    font-size: 1.5rem;
     font-weight: bold;
-  
+    padding-bottom: 15px;
+    }
     }
     .news_li {
     font-size: 1.5rem;
     
       li {
       list-style: none;
+      padding-bottom: 5px;
       
       span {
       color: #42b9d0;
       display: block;
       font-weight: bold;
-      margin-bottom: 3px;
+      margin-bottom: 0;
+      padding-right: 10px;
+      display: inline-block;
         }
       }
     }
   }
-}
 
 // Smartphone News Contents
 
+
 @media (min-width: 550px){
-#contents #main .news_li li {
-    list-style: none;
-    padding-bottom: 5px;
-    
+  #contents{
+    padding-top: 35px;
+    #main{
+        h2 {
+          font-size: 2rem;
+        }
+      .news_li{
+        li {
+          list-style: none;
+          padding-bottom: 5px;
+          }
+        }
+  
+      }  
+    }
+  }
     span {
     display: inline-block;
     margin-bottom: 0;
@@ -563,8 +567,7 @@ h1{
 
     color: #42b9d0;
     font-weight: bold;
-    }
-  }
+
 }
 
 // Desktop news contents
@@ -607,19 +610,15 @@ h1{
 
 // sidebar
 
-#contents{
-  #main{
-      th {
-      padding-right: 20px;
-      }
-  }
-}
-
 #contents #main th, #contents #main td {
     padding: 20px 0;
     color: #626262;
     font-size: 14px;
     font-size: 1.4rem;
+}
+
+#contents #main th {
+padding-right: 20px;
 }
 
 //Company Contents

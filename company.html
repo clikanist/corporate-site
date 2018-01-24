@@ -13,10 +13,6 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
-
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/normalize.css">
@@ -86,7 +82,7 @@
     <div class="row">
       <div class="twelve columns">
         
-       <h2>COMPANY</h2>
+       <h2>COMPANY INFO</h2>
         
       </div>
     </div>
@@ -131,18 +127,37 @@
             </tr> 
               <tr>
               <th>事業内容</th>
-              <td>・デザイン事業部
-              ・インターネット関連事業部
-              ・ソフトウェア開発事業部
-              ・◯◯事業部
-              ・◯◯事業部</td>
+              <td>・デザイン事業部<br>
+              ・インターネット関連事業部<br>
+              ・ソフトウェア開発事業部<br>
+              ・◯◯事業部<br>
+              ・◯◯事業部<br>
+              </td>
             </tr>
 
             </tbody>
           </table>
           </div>
+          
+          <div id="sidebar" class="three columns">
+        <div class="pc_sidemenu">
+          <h3 class>Contents</h3>
+          <ul class>
+            <li class>
+              <a href="index.html" class>Topページ</a>
+            </li>
+            <li class>
+              <a href="news.html" class>ニュースリリース</a>
+            </li>
+            <li class>
+              <a href="company.html" class>会社概要</a>
+            </li>
+          </ul>
+        </div>
+        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fhiratsukacp%2F&tabs=timeline&width=210&height=300&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=316995074200" width="210" height="300" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
     </div>
     
+    </div>
     </div>
 </div>
 
@@ -187,6 +202,22 @@
 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<script>
+  $(function(){
+
+    $(document).ready(function(){
+
+      $("#sp_navi_btn").click(function () {
+        $(this).next().slideToggle();
+      });
+
+    });
+
+  });
+</script>
   
   </body>
 </html>
